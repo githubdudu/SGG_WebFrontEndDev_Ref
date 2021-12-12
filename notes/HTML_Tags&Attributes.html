@@ -1,0 +1,230 @@
+This is not a html page, just a aggregation of HTML Tags and Atttributes.
+
+<!-- this means this is a comment -->
+
+<!-- this is for HTML5 standard mode -->
+<!DOCTYPE html>
+
+<!-- these are old version, 4.01 strict. -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<!-- html: the root element -->
+<html>
+<!-- 设置xml 命名空间 -->
+  <html xmlns="http://www.w3.org/1999/xhtml">
+<!-- 所有全局 attributes，其中最常搭配的是lang  -->
+  <html lang="en">
+
+<!-- head -->
+<!-- 需要至少一个metadata，其中之一是 title。特殊情况下允许 0 个matadata -->
+<head>
+    <!-- title -->
+      <title>Amazing</title>
+
+    <!-- base -->
+      <!-- 应放置在使用 URL的link之前 -->
+      <!-- 设置 URL 的基准 -->
+        <base href="https://www.example.com/">
+      <!-- target设置全局的 <a> <area> <form> 的target行为 -->
+        <base target="_self"> (default)
+        <base target="_blank">
+        <base target="_parent">
+        <base target="_top" href="https://example.com/">
+ 
+    <!-- link -->
+      <!-- css sheet -->
+        <link href="style.css" rel="stylesheet">
+      <!-- alternative css sheet -->
+        <link href="default.css" rel="stylesheet" title="Default Style">
+        <link href="fancy.css" rel="alternate stylesheet" title="Fancy">
+        <link href="basic.css" rel="alternate stylesheet" title="Basic">
+      <!-- Providing icons for different usage contexts -->
+        <!-- third-generation iPad with high-resolution Retina display: -->
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="favicon144.png">
+        <!-- iPhone with high-resolution Retina display: -->
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="favicon114.png">
+        <!-- first- and second-generation iPad: -->
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="favicon72.png">
+        <!-- non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+        <link rel="apple-touch-icon-precomposed" href="favicon57.png">
+        <!-- basic favicon -->
+        <link rel="icon" href="favicon32.png">
+
+      <!-- Conditionally loading -->
+        <link href="print.css" rel="stylesheet" media="print">
+        <link href="mobile.css" rel="stylesheet" media="all">
+        <link href="desktop.css" rel="stylesheet" media="screen and (min-width: 600px)">
+        <link href="highres.css" rel="stylesheet" media="screen and (min-resolution: 300dpi)">
+      <!-- on load event -->
+        <script>
+          var myStylesheet = document.querySelector('#my-stylesheet');
+          myStylesheet.onload = function() {
+            // Do something interesting; the sheet has been loaded
+          }       
+          myStylesheet.onerror = function() {
+            console.log("An error occurred loading the stylesheet!");
+          }
+        </script>
+        <link rel="stylesheet" href="mystylesheet.css" id="my-stylesheet">
+
+      <!-- as: Preload -->
+        <link rel="preload" href="###" as="audio">
+        <link rel="preload" href="###" as="document">
+        <link rel="preload" href="###" as="embed">
+        <link rel="preload" href="###" as="fetch">
+        <link rel="preload" href="myFont.woff2" as="font" type="font/woff2">
+        <link rel="preload" href="###" as="image">
+        <link rel="preload" href="###" as="object">
+        <link rel="preload" href="###" as="script">
+        <link rel="preload" href="###" as="style">
+        <link rel="preload" href="###" as="video">
+        <link rel="preload" href="###" as="worker">
+      <!-- imagesizes, imagesrcset 和 rel="preload" href="###" as="image" 一起使用 -->
+      <!-- 类似于 img 中的 sizes 和srcset -->
+        <link rel="preload" href="###" as="image" srcset="clock-demo-200px.png 200w,
+        clock-demo-400px.png 400w" sizes="(max-width: 600px) 200px, 50vw">
+
+      <!-- crossorigin -->
+        <link rel="" href="###" crossorigin="anonymous"> (default)
+        <link rel="" href="###" crossorigin="use-credentials">
+      <!-- disabled 仅仅用于rel="stylesheet" -->
+        <link rel="stylesheet" href="###" disabled="false"> 
+        <link rel="stylesheet" href="###" disabled="true">
+        <link rel="stylesheet" href="###" disabled>
+      <!-- hreflang 仅当有 href 时，才使用此属性 -->
+      <!-- "en" "cn" "ja" -->
+        <link rel="stylesheet" href="###" hreflang="en">
+      <!-- integrity -->
+        <link integrity="a base64 encoded strings" >
+      <!-- media --> 
+      <!-- print, screen, aural, braille, so on -->
+        <link media="{media type/ media query}">
+      <!-- prefetch -->
+        <link prefetch> ??
+        <link rel="prefetch" > ??
+      <!-- referrerpolicy -->
+        <link referrerpolicy="no-referrer" "no-referrer-when-downgrade" 
+                "origin" "origin-when-cross-origin" "unsafe-url" >
+      <!-- rel -->
+        <link rel="{link type values}"> 
+      <!-- sizes --> 
+      <!-- 如上面所写，是和 rel="icon" or rel="apple-touch-icon" 等一起使用 -->
+        <link sizes="144x144">
+      <!-- title -->
+        如上面所写, 是和 alternative css 一起使用
+        <link title="Default Style" >
+      <!-- type -->
+        <link type="{MIME type}" >
+        <link type="text/css" >
+
+    
+    <!-- style -->
+    <!-- media -->
+    <style media="all and (max-width: 500px)">
+        p {
+          color: blue;
+          background-color: yellow;
+        }
+    </style>
+    <!-- type -->
+    <style type="text/css" ></style>
+    <!-- nonce -->
+    <!-- 使用nonce属性可以将某些内联script和style元素“列入白名单” -->
+    <style nonce="EDNnf03nceIOfn39fn3e9h3sdfa" ></style>
+    <!-- title -->
+    <!-- 类似于  <link rel="stylesheet"> 中的 title -->
+    <style title="Dark Mode" ></style>
+
+    <!-- meta -->
+    <!-- charset -->
+    <meta charset="UTF-8">
+    <!-- http-equiv -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- name -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    media type/ media query
+      media type
+        all
+        print
+        screen
+        speech
+      media feature
+        any-hover
+        any-pointer
+        aspect-ratio
+        color
+        color-gamut
+        color-index
+        display-mode
+        forced-colors
+        grid
+        height
+        hover
+        inverted-colors
+        light-level
+        monochrome
+        orientation
+        overflow-block
+        overflow-inline
+        pointer
+        prefers-color-scheme
+        prefers-contrast
+        prefers-reduced-motion
+        prefers-reduced-transparency
+        resolution
+        scan
+        scripting
+        update
+        width
+      logical operators
+        and
+        not
+        only
+        ,(comma)
+    referrerpolicy type values:
+        Referrer-Policy: no-referrer
+        Referrer-Policy: no-referrer-when-downgrade
+        Referrer-Policy: origin
+        Referrer-Policy: origin-when-cross-origin
+        Referrer-Policy: same-origin
+        Referrer-Policy: strict-origin
+        Referrer-Policy: strict-origin-when-cross-origin
+        Referrer-Policy: unsafe-url
+    link type values:
+        alternate
+        author
+        bookmark
+        canonical
+        dns-prefetch
+        external
+        help
+        icon
+        import
+        license
+        manifest
+        modulepreload
+        next
+        nofollow
+        noopener
+        noreferrer
+        opener
+        pingback
+        preconnect
+        prefetch
+        preload
+        prerender
+        prev
+        search
+        shortlink
+        stylesheet
+        tag
+        {non-standard value}, such as: "apple-touch-icon"
+    MIME type values:
+
+    language type values:
+    length type values:
+    color type values:
+</body>
+</html>
