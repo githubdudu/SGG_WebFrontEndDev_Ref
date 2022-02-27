@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html>
+
+<head> 
+  <meta charset="utf-8"> 
+  <title>TESTING</title> 
+  <!-- <script type="text/javascript" src="alert.js"></script>  -->
+
+</head>
+
+<body>
+
+  <article>
+    <h1 style=color:red>Internet Explorer 9</h1>
+    <p> Windows Internet Explorer 9(缩写为 IE9 )在2011年3月14日21:00 发布。</p>
+  </article>
+
+</body>
+<script>
+  // function ucFirst(str){
+  //   return str[0].toUpperCase() + str.slice(1, str.length);
+  // }
+  // alert(ucFirst("john"));
+
+  // function checkSpam(str) {
+  //   if (~str.toLowerCase().indexOf("viagra")
+  //     || ~str.toLowerCase().indexOf("xxx")){
+  //     return true;
+  //   }
+  //   return false;
+  // }
+
+  // alert(checkSpam("innocent rabbit"));
+
+  // function truncate(str, maxlength){
+  //   if(str.length > maxlength){
+  //     return str.slice(0, maxlength-1) + "...";
+  //   }
+  //   return str;
+  // }
+
+  //   function extractCurrencyValue(str){
+  //     let count = 0;
+  //     for (let i = 0; i< str.length; i++){
+  //       if (isFinite(str[i])){
+  //         return +str.slice(i);
+  //       }
+  //     }
+  //   }
+  //   x = truncate("Hi everyone!", 20);
+  // alert(x);
+
+  // let fruits = ["Apples", "Pear", "Orange"];
+
+  // // 在“副本”里 push 了一个新的值
+  // let shoppingCart = fruits;
+  // shoppingCart.push("Banana");
+
+  // // fruits 里面是什么？
+  // alert(fruits.length); // ?
+
+  // function sumInput(){
+  //   let count = 0;
+
+  //   let shuzu = [];
+  //   let sum = 0;
+
+  //   let input = prompt("type in numbers","");
+
+  //   while(input !=="" && isFinite(input) &&input !==null){
+  //     shuzu[count] = +input;
+  //     count++;
+
+  //     // alert(input);
+  //     input = prompt("type in numbers","");
+  //   }
+
+  //     for (let i of shuzu){
+  //       sum += i;
+  //     }
+  //   return sum;
+  // }
+  // alert(sumInput());
+
+  // function getMaxSubSum(arr) {
+  //   let max = arr.sort(function (a, b) { return b - a })[0];
+  //   for (let num of arr) {
+  //     if (num === max) {
+  //       max = (max > 0) ? max : 0;
+  //       return max;
+  //     } else {
+  //       let index1 = (arr[0] > 0) ? 0 : 1;
+  //       let index2 = (arr[arr.length - 1] > 0) ? arr.length : arr.length - 1;
+  //       return getMaxSubSum(arr.slice(index1, index2));
+  //     }
+  //   }
+  // }
+
+  // alert(getMaxSubSum([-1, 2, 3, -9])); // 5
+  // alert(getMaxSubSum([-1, 2, 3, -9, 11])); // 11
+  // alert(getMaxSubSum([-2, -1, 1, 2])); // 3
+  // alert(getMaxSubSum([1, 2, 3])); // 6
+  // alert(getMaxSubSum([100, -9, 2, -3, 5])); // 100
+
+  // function camelize(str){
+  //   str= str.split("-");
+  //   for (let i = 1; i < str.length; i++) {
+  //      str[i] = str[i][0].toUpperCase() + str[i].slice(1);
+  //   }
+
+  //   return str.join("");
+  // }
+
+  // alert(camelize("background-color"));
+  // alert(camelize("list-style-image"));
+
+
+  //   function filterRange(arr, a, b) {
+  //     return arr.filter(xxx=> xxx >= a && xxx <= b
+  //       // && xxx < b 
+  //     )
+  //   }
+
+  //   let arr = [5, 3, 8, 1];
+
+  // let filtered = filterRange(arr, 1, 4);
+
+  // alert( filtered ); // 3,1（匹配值）
+
+  // alert( arr ); // 5,3,8,1（未修改）
+
+  // function filterRangeInPlace(arr,a,b) {
+  //   for (let i = 0; i<arr.length; i++){
+  //     if (arr[i] <a || arr[i] > b){
+  //       arr.splice(i,1);
+  //       i--;
+  //     }
+  //   }
+  // }
+
+  // let arr = [5, 8, 3, 1];
+
+  // filterRangeInPlace(arr, 1, 4); // 删除了范围在 1 到 4 之外的所有值
+
+  // alert( arr ); // [3, 1]
+
+  // let arr = [5, 2, 1, -10, 8];
+
+  // // ……你的代码以降序对其进行排序
+  // arr.sort((a,b)=>b-a);
+  // alert( arr ); 
+
+  // function copySorted(arr) {
+  //   return arr.slice().sort();
+  // }
+  // let arr = ["HTML", "JavaScript", "CSS"];
+
+  // let sorted = copySorted(arr);
+
+  // alert( sorted ); // CSS, HTML, JavaScript
+  // alert( arr ); // HTML, JavaScript, CSS (no changes)
+
+  // function Calculator() {
+  //   this.operator = ["+", "-"];
+  //   this.funcs = [(a, b) => a + b, (a, b) => a - b];
+  //   this.calculate = (str) => {
+  //     this.new = str.split(" ");
+  //     this.index = this.operator.indexOf(this.new[1]);
+  //     this.new[2] = +this.new[2];
+  //     return this.new.slice(2).reduce(this.funcs[this.index], +this.new[0]);
+  //   }
+
+  //   this.addMethod = (name, func) => {
+  //     this.operator.push(name);
+  //     this.funcs.push(func);
+  //   }
+  // }
+
+  // let powerCalc = new Calculator;
+  // powerCalc.addMethod("*", (a, b) => a * b);
+  // powerCalc.addMethod("/", (a, b) => a / b);
+  // powerCalc.addMethod("**", (a, b) => a ** b);
+
+  // let result = powerCalc.calculate("2 ** 3");
+  // alert(result); // 8
+
+  // let john = { name: "John", age: 25 };
+  // let pete = { name: "Pete", age: 30 };
+  // let mary = { name: "Mary", age: 28 };
+
+  // let users = [john, pete, mary];
+
+  // let names = users.map((items)=> items.name);/* ... your code */
+
+  //   alert(names); // John, Pete, Mary
+
+
+  // let john = { name: "John", surname: "Smith", id: 1 };
+  // let pete = { name: "Pete", surname: "Hunt", id: 2 };
+  // let mary = { name: "Mary", surname: "Key", id: 3 };
+
+  // let users = [john, pete, mary];
+
+  // let usersMapped = users.map(items => ({ 
+  //   fullName: items.name + " " + items.surname, id: items.id }));
+
+  // /* ... your code ... */
+
+  // alert(usersMapped[0].id) // 1
+  // alert(usersMapped[0].fullName) // John Smith
+
+  // function sortByAge(users) {
+  //   users.sort((userA,userB) => (userA.age - userB.age));
+  // }
+  // let john = { name: "John", age: 25 };
+  // let pete = { name: "Pete", age: 30 };
+  // let mary = { name: "Mary", age: 28 };
+
+  // let arr = [pete, john, mary];
+
+  // sortByAge(arr);
+
+  // // now: [john, mary, pete]
+  // alert(arr[0].name); // John
+  // alert(arr[1].name); // Mary
+  // alert(arr[2].name); // Pete
+
+  // function shuffle(arr) {
+  //   let newarr = [];
+  //   for (let i = 0; i < arr.length; i++) {
+  //     newarr[i] = arr[Math.floor(Math.random() * 2)];
+  //     arr.sort((a,b)=>((Math.random() - Math.random())));
+  //   }
+
+
+  // }
+
+  // function getAverageAge(users) {
+  //   x = users.reduce((previous, user) => previous + user.age, 0) / users.length;
+  //   return x;
+
+  // }
+  // let john = { name: "John", age: 25 };
+  // let pete = { name: "Pete", age: 30 };
+  // let mary = { name: "Mary", age: 29 };
+
+  // let arr = [john, pete, mary];
+
+  // alert(getAverageAge(arr));
+  // alert(typeof (getAverageAge(arr))); // 28
+
+  // function unique(arr) {
+  //   /* your code */
+  //   let newarr = [];
+  //   for (let i = 0; i < arr.length; i++) {
+  //     if (!newarr.includes(arr[i])){
+  //       newarr.push(arr[i]);
+  //     }
+
+  //   }
+  //   return newarr;
+  // }
+
+  // let strings = ["Hare", "Krishna", "Hare", "Krishna",
+  //   "Krishna", "Krishna", "Hare", "Hare", ":-O"
+  // ];
+
+  // alert(unique(strings)); // Hare, Krishna, :-O
+
+
+  // function groupById(users) {
+  //   let newObj = {};
+  //   newObj = users.reduce((accumu, curr) =>{
+  //     accumu[curr.id] = curr;
+  //     return accumu;
+  //   }, {});
+  //   return newObj;
+  // }
+  // let users = [
+  //   { id: 'john', name: "John Smith", age: 20 },
+  //   { id: 'ann', name: "Ann Smith", age: 24 },
+  //   { id: 'pete', name: "Pete Peterson", age: 31 },
+  // ];
+
+  // let usersById = groupById(users);
+  // alert(usersById);
+  // /*
+
+
+  // // 调用函数后，我们应该得到：
+
+  // usersById = {
+  //   john: {id: 'john', name: "John Smith", age: 20},
+  //   ann: {id: 'ann', name: "Ann Smith", age: 24},
+  //   pete: {id: 'pete', name: "Pete Peterson", age: 31},
+  // }
+  // */
+
+
+  // function unique(arr) {
+  //   /* 你的代码 */
+  //   let nameSet = new Set(arr);
+  //   let newarr = [];
+  //   // for (let name of arr){
+  //   //   nameSet.add(name);
+  //   // }
+  //   for (let n of nameSet.entries()){
+  //     newarr.push(n);
+  //   }
+  //   return newarr;
+  // }
+
+  // let values = ["Hare", "Krishna", "Hare", "Krishna",
+  //   "Krishna", "Krishna", "Hare", "Hare", ":-O"
+  // ];
+
+  // alert(unique(values)); // Hare, Krishna, :-O
+
+
+  // function aclean(arr) {
+  //   let newMap = new Map();
+  //   for (let a of arr) {
+  //     let temp = Array.from(a.toLowerCase()).sort();
+  //     temp = temp.reduce((prev, curr) => prev + curr);
+  //     newMap.set(temp, a);
+  //   }
+  //   return Array.from(newMap.values());
+  // }
+  // let arr = ["nap", "teachers", "cheaters", "PAN", "ear", "era", "hectares"];
+
+  // alert(aclean(arr)); // "nap,teachers,ear" or "PAN,cheaters,era"
+
+
+  // let newWeakMap = new WeakMap();
+  // for (let m of messages){
+  //   let unReadSign = true;
+  //   newWeakMap.set(m, unReadSign);
+  // }
+
+
+  // function sumSalaries(salaries) {
+  //   let sum = 0;
+  //   for (let v of Object.values(salaries)) {
+  //     sum += v;
+  //   }
+  //   return sum;
+  // }
+  // let salaries = {
+  // "John": 100,
+  // "Pete": 300,
+  // "Mary": 250
+  // };
+  // alert(sumSalaries(salaries)); // 650
+
+
+  // function count(obj) {
+  //   return Object.keys(obj).length;
+  // }
+  // let user = {
+  //   name: 'John',
+  //   age: 30
+  // };
+  // alert(count(user)); // 2
+
+
+  // let user = {
+  //   name: "John",
+  //   years: 30
+  // };
+  // let { name: name, years: age, isAdmin = "false" } = user;
+  // alert(name); // John
+  // alert(age); // 30
+  // alert(isAdmin); // false
+
+
+  // function topSalary(salaries) {
+  //   let maxSalary = 0;
+  //   for (let [name, salary] of Object.entries(salaries)) {
+  //     maxSalary = Math.max(salary, maxSalary);
+  //   }
+  //   for (let [name, salary] of Object.entries(salaries)) {
+  //     if (salary === maxSalary) {
+  //       return name;
+  //     }
+  //   }
+
+  // }
+  // let salaries = {
+  //   "John": 100,
+  //   "Pete": 300,
+  //   "Mary": 250
+  // };
+  // alert(topSalary(salaries));
+
+  // alert(new Date(2012, 1, 20, 3, 12, 0));
+
+
+  // function getWeekDay(date) {
+  //   let index = ["SU","MO","TU","WE","TH","FR","SA"];
+  //   return index[date.getDay()];
+  // }
+  // let date = new Date(2012, 0, 3);  // 3 Jan 2012
+  // alert(getWeekDay(date));        // 应该输出 "TU"
+
+
+  // function getLocalDay(date) {
+  //   return (date.getDay() === 0) ? 7 : date.getDay();
+  // }
+  // let date = new Date(2012, 0, 3);  // 3 Jan 2012
+  // alert(getLocalDay(date));       // 星期二，应该显示 2
+
+
+  // function getDateAgo(date, days) {
+  //   // let dateAgo = new Date(date.getMilliseconds());
+  //   // dateAgo.setDate(date.getDate() - days);
+  //   // return dateAgo.getDate();
+  //   let dateCopy = new Date(date);
+  //   dateCopy.setDate(date.getDate() - days);
+  //   return dateCopy.getDate();
+  // }
+  // let date = new Date(2015, 0, 2);
+  // alert(getDateAgo(date, 1)); // 1, (1 Jan 2015)
+  // alert(getDateAgo(date, 2)); // 31, (31 Dec 2014)
+  // alert(getDateAgo(date, 365)); // 2, (2 Jan 2014)
+
+
+  // function getLastDayOfMonth(year, month) {
+  //   let onedate = new Date();
+  //   onedate.setFullYear(year, month+1, 0);
+
+  //   return onedate.getDate();
+  // }
+  // alert(getLastDayOfMonth(2012, 1));
+
+
+  // function getSecondsToday() {
+  //   let moment = new Date();
+  //   moment.setHours(0,0,0,0);
+  //   let momentNow = new Date();
+  //   return ((momentNow - moment)/1000);
+  // }
+  // alert(getSecondsToday());
+
+
+  // function getSecondsToTomorrow() {
+  //   let moment = new Date();
+  //   moment.setHours(0,0,0,0);
+  //   moment.setDate(moment.getDate() + 1);
+  //   let momentNow = new Date();
+  //   return Math.round((moment - momentNow)/1000);
+  // }
+  // alert(getSecondsToTomorrow());
+
+
+  // function formatDate(date) {
+  //   let datenow = new Date();
+  //   let seconds = datenow - date;
+  //   if (seconds < 1000) {
+  //     return "right now";
+  //   } else if (seconds < 1000 * 60) {
+  //     return `${Math.round(seconds / 1000)} sec. ago`;
+  //   } else if (seconds < 1000 * 60 * 60) {
+  //     return `${Math.round(seconds / 1000 / 60)} min. ago`;
+  //   } else {
+  //     let y = date.getFullYear();
+  //     let m = date.getMonth() + 1;
+  //     let d = date.getDate();
+  //     let h = date.getHours();
+  //     let min = date.getMinutes();
+  //     return `${d}.${m}.${y} ${h}:${min}`;
+  //   }
+  // }
+  // alert(formatDate(new Date(new Date - 1))); // "right now"
+
+  // alert(formatDate(new Date(new Date - 30 * 1000))); // "30 sec. ago"
+
+  // alert(formatDate(new Date(new Date - 5 * 60 * 1000))); // "5 min. ago"
+
+  // // 昨天的日期，例如 31.12.16 20:00
+  // alert(formatDate(new Date(new Date - 86400 * 1000)));
+
+
+  // let user = {
+  //   name: "John Smith",
+  //   age: 35
+  // };
+  // userTwo = JSON.parse(JSON.stringify(user));
+
+
+  let room = {
+    number: 23
+  };
+
+  let meetup = {
+    title: "Conference",
+    occupiedBy: [{ name: "John" }, { name: "Alice" }],
+    place: room
+  };
+
+  // 循环引用
+  room.occupiedBy = meetup;
+  meetup.self = meetup;
+
+  alert(JSON.stringify(meetup, function replacer(key, value) {
+    /* your code */
+    return (key!=""&&value == meetup) ? undefined : value;
+  }));
+</script>
+
+</html>
