@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        #cframe {
+            position: absolute;
+            width: 201px;
+            height: 201px;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            border: 5px solid rgb(12, 11, 9);
+            border-radius: 50%;
+        }
+
+        .pointer {
+            position: relative;
+            width: 201px;
+            height: 201px;
+        }
+
+        .scales div{
+            position: absolute;
+            width: 3px;
+            height: 10px;
+            left: 99px;
+            background: gold;
+            transform-origin: center 100px;
+        }
+
+        .scales div:nth-child(5n +1){
+            height:16px;
+            border-bottom:3px solid grey;
+        }
+
+        #secHand {
+            position: relative;
+            float: left;
+            left: 99px;
+            top: 100px;
+            border-top: 3px solid red;
+            width: 3px;
+            height: 80px;
+            margin-top: -80px;
+            background: gold;
+            z-index: 5;
+
+            transform-origin: bottom center;
+        }
+
+        #minHand {
+            position: relative;
+            float: left;
+            left: 98px;
+            top: 100px;
+            margin-top: -60px;
+            width: 5px;
+            height: 60px;
+            background: grey;
+
+            transform-origin: bottom center;
+        }
+
+        #hourHand {
+            position: relative;
+            float: left;
+            left: 96px;
+            top: 100px;
+            margin-top: -40px;
+            width: 9px;
+            height: 40px;
+            background: black;
+            z-index: 3;
+
+            transform-origin: bottom center;
+
+        }
+
+        #btn {
+            position: relative;
+            float: left;
+            width: 15px;
+            height: 15px;
+
+            border-radius: 50%;
+            left: 93px;
+            top: 93px;
+            background: cyan;
+            z-index: 9;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div>
+        <div id="cframe">
+            <div class="pointer">
+                <div class="scales">
+           
+                </div>
+
+                <div id="secHand">
+
+                </div>
+                <div id="minHand">
+
+                </div>
+                <div id="hourHand">
+
+                </div>
+                <div id="btn">
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        const secHand = document.querySelector("#secHand");
+        const minHand = document.querySelector("#minHand");
+        const hourHand = document.querySelector("#hourHand");
+        var cssHtml = "";
+        var scalesHtml = "";
+        var cssNode = document.createElement("style");
+        var scales = document.querySelector(".scales")
+        for (var i = 0; i < 60; i++) {
+            cssHtml += ".scales div:nth-child(" + (i + 1) + "){transform: rotate(" + (i * 6) + "deg);}";
+            scalesHtml += "<div></div>";
+        }
+
+        cssNode.innerHTML = cssHtml;
+        scales.innerHTML = scalesHtml;
+        document.head.appendChild(cssNode);
+        fn();
+        setInterval(fn, 1000);
+        function fn() {
+            var gettime = new Date();
+            var s = 6 * gettime.getSeconds();
+            var m = 6 * (gettime.getMinutes() + s / 360);
+            var h = 30 * (gettime.getHours() + m / 360);
+
+            secHand.style.transform = "rotate(" + s + "deg)";
+            minHand.style.transform = "rotate(" + m + "deg)";
+            hourHand.style.transform = "rotate(" + h + "deg)";
+        }
+    </script>
+</body>
+
+</html>

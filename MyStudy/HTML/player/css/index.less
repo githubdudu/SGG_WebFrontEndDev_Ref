@@ -1,0 +1,142 @@
+@import "reset.less";
+
+#wrap{
+    height: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    background: #383838;
+    .control{
+        position: relative;
+        height: 25px;
+        // background: pink;
+        background: #2a2a2a;
+        min-width: 600px;
+        .btns{
+            position: absolute;
+            width: 55px;
+            height: 25px;
+            // background: rgb(0, 128, 0);
+            .play,.stop{
+                display: inline-block;
+                width: 9px;
+                height: 11px;
+                margin:6px 5px 0px 8px;
+                background: url("../img/icon.png")  no-repeat;
+                background-position-y: 1px;
+                // background: pink;
+            }
+            .play{
+                background-position-y: -22px;
+                &.active{
+                    background-position-y: -10px;
+                }
+            }
+            // .stop{}
+        };
+        &>.progress{
+            position: relative;
+            height: 25px;
+            margin: 0 230px 0 55px;
+            // border-right:1px solid white;
+            .line{
+                position: absolute;
+                width: 100%;
+                height: 3px;
+                // padding:1px;
+                margin-top: 10px;
+                background: #737373;
+                .block{
+                    position: absolute;
+                    width: 9px;
+                    height: 9px;
+                    background: white;
+                    border-radius: 2px;
+                    margin-top: -3px;
+                }
+            }
+            .deeppink{
+                position:absolute;
+                top: 0;
+                left: 0;
+                width: 0px;
+                height: 4px;
+                margin-top: 10px;
+                background: deeppink;
+            }
+        }
+        .others{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 230px;
+            height: 25px;
+            background: rgba(0, 128, 0, 0.1);
+            .time{
+                color:white;
+                font: 12px/25px "san-serif";
+                width: 120px;
+                text-align: center;
+            }
+            .sound{
+                position: absolute;
+                top:0;
+                left: 120px;
+                // margin-top: 6px;
+                width: 80px;
+                .switch{
+                    width: 20px;
+                    height: 25px;
+                    span{
+                        display: inline-block;
+                        margin: 6px auto;
+                        width: 12px;
+                        height: 12px;
+                        background: url(../img/icon.png) no-repeat;
+                        background-position-y: -34px;
+                        &.active{
+                            background-position-y: -46px;
+
+                        }
+                    }
+                }
+
+                .progress{
+                    // display: inline-block;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    width: 60px;
+                    height: 25px;
+                    
+                    .line{
+                        &:extend(#wrap .control > .progress .line all);
+                    }
+
+                    .deeppink{
+                        &:extend(#wrap .control > .progress .deeppink all);
+                    }
+                }
+
+            }
+
+            .full-screen{
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 30px;
+                span{
+                    display: block;
+                    margin: 6px auto;
+                    width: 11px;
+                    height: 11px;
+                    background: url(../img/icon.png) no-repeat;
+                    background-position-y: -58px;
+                    &.active{
+                        background-position-y: -70px;
+                    }
+                }
+            }
+
+        }
+    }
+}

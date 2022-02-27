@@ -1,0 +1,301 @@
+body{
+    background: url(../img/bd-bg.png) repeat-x;
+    height:3000px;
+}
+
+/* 高度塌陷 */
+.clearfix:before,
+.clearfix:after{
+    content:"";
+    display: table;
+    clear: both;
+}
+
+.clearfix{
+    zoom:1;
+}
+/* 设置宽度类 */
+.w{
+    width: 940px;
+    margin: 0 auto;
+}
+
+/* 设置整个横框 */
+.header{
+    /* background-color: aqua; */
+    padding:37px 0px 46px;
+}
+
+/* 通过margin设置logo */
+.logo{
+    margin-left:15px;
+}
+
+/* 五个文字漂浮 */
+.nav{
+    float: right;
+}
+
+/* 五个条目依次向左漂浮 */
+.nav li{
+    float: left;
+    padding: 0px 10px 8px;
+    border-left: 1px #d6d6d6 dotted;
+    margin-top:22px;
+    /* background: repeating-linear-gradient(); */
+    /* background-color: aqua; */
+}
+
+/* 设置具体字体 */
+.nav a{
+    color:#666;
+    font: bold 14px Georgia;
+    text-decoration: none;
+}
+
+.nav a:hover{
+    color:#969696;
+    text-decoration: underline;
+}
+.nav p{
+    color:#b7b7b7;
+    font: 12px Tahorra;
+}
+
+/* 设置条幅 */
+.banner{
+    height:356px;
+    background: url(../img/banner-bg.png) no-repeat bottom center;
+    position:relative;
+    /* background-color: blue; */
+}
+
+/* 5个小按钮 */
+.slider{
+    position:absolute;
+    top:314px;
+    left:15px;
+}
+.slider a{
+    background: url(../img/button.png) no-repeat;
+    float:left;
+    width: 17px;
+    height: 17px;
+    margin-left: 4px;
+}
+
+.slider .active, .slider a:hover{
+    background: url(../img/button-a.png) no-repeat;
+}
+
+/* 设置内容 */
+/* 标题 */
+.content h1{
+    text-align:center;
+    font:bold 24px/30px Georgia;
+    background: url(../img/line.png) no-repeat bottom center;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+.content .pl, .content .cs, .content .uc,
+.contacts .sc, .contacts .co, .contacts .nu{
+    width:300px;
+    /* background-color:chartreuse; */
+    float:left;
+}
+
+.content .cs,
+.contacts .co{
+    margin:0 20px;
+}
+
+.content h2{
+    font: 21px Georgia; 
+    color: #11719e;
+}
+
+.content .p1{
+    color: #8c8c8c;
+    font: 12px Helvetica;
+}
+
+.content .imgDiv{
+    width:299px;
+    height: 190px;
+    background: url(../img/img-bg.png) no-repeat;
+    margin: 15px 0;
+    text-align: center;
+    padding-top:12px;
+    /* background-color: darkcyan; */
+
+}
+
+.content .p2{
+    height: 96px;
+    color: #3e3e3e;;
+    font: 13px/16px Helvetica;
+    word-spacing: 2px;
+}
+
+.content .lm{
+    width:163px;
+    height: 40px;
+    display: block;
+    background: url(../img/btn1.png) no-repeat;
+
+    text-decoration: none;
+    font: 12px/40px Helvetica;
+    color:#016999;
+    text-indent: 1em;
+
+    margin-bottom: 32px;
+}
+
+.content{
+    /* background-color: coral; */
+}
+
+.contacts{
+    background: url(../img/line.png) no-repeat top center;
+    /* background:aqua; */
+}
+
+
+.contacts .text{
+    width: 276px;
+    height: 33px;
+    background: url(../img/input.png) no-repeat;
+    border: none;
+    padding: 0 10px;
+    margin: 0px 0 16px;
+}
+
+.contacts textarea{
+    width: 276px;
+    height: 114px;
+    background: url(../img/textarea-bg.png) no-repeat;
+    border: none;
+    overflow: auto;
+    resize: none;
+    padding: 10px;
+}
+
+.btn{
+    width: 163px;
+    height: 32px;
+    background: url(../img/btn2.png) no-repeat;
+    border: none;
+    color:#fff;
+    font: 13px Georgia;
+    text-align: left;
+    text-indent: 1em;
+    padding: 0;
+    margin: 10px 0 23px;
+
+    cursor: pointer;
+}
+
+.contacts h2{
+    color:#444;
+    font: 18px/1 Georgia;
+    padding: 44px 0 10px;
+    border-bottom: 1px dashed #d3d3d3;
+    margin-bottom: 15px;
+}
+
+.sc .p1{
+    color: #444;
+    font: 12px/1 Helvetica;
+}
+.sc h2,
+.nu h2{
+    margin-bottom: 13px;
+}
+
+.sc a{
+    display: block;
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin-top: 5px;
+}
+
+#css{
+    background: url(../img/socialIcon.png) no-repeat;
+    background-position-x: 0px;
+}
+#facebook{
+    background: url(../img/socialIcon.png);
+    background-position-x: -60px;
+}
+#ins{
+    background: url(../img/socialIcon.png);
+    background-position-x: -120px;
+}
+#youtube{
+    background: url(../img/socialIcon.png);
+    background-position-x: -180px;
+}
+#twitter{
+    background: url(../img/socialIcon.png);
+    background-position-x: -240px;
+}
+
+.sc h3{
+    color: #444;
+    font: bold 18px/14px "Gill Sans MT"; 
+    border-bottom: 1px dashed #d3d3d3;
+    padding: 38px 0 10px;
+    margin-bottom: 13px;
+}
+
+.sc .text{
+    /* padding:10px 0 10px; */
+    margin-bottom:2px;
+    margin-top: 14px;
+}
+
+.nu img{
+    float:left;
+    padding-right: 8px;
+}
+
+.nu p{
+    color: #444;
+    font: 12px/14px Helvetica;
+    height:58px;
+    padding: 1px 1px 9px;
+    margin-top: 13px;
+    border-bottom: 1px dashed #d3d3d3;
+}
+
+.nu .last{
+    padding: 2px 1px 11px;
+}
+
+.footer{
+    height: 173px;
+    background: #333;
+    border-top: 10px solid #4c4c4c;
+}
+
+.footer a, .footer p{
+    color: #999;
+    text-decoration: none;
+    font:11px Helvetica;
+}
+
+.footer a:hover{
+    color:#cccaca;
+    text-decoration: underline;
+}
+.footer p{
+    margin:0px 23px 6px 8px;
+}
+.footer .w{
+    padding-top: 18px;
+}
+.footer .copyright{
+    float: right;
+}

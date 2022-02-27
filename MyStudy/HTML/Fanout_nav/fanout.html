@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        .bt {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            z-index: 10;
+            transition: 1s;
+        }
+        
+        .btlist img {
+            position: fixed;
+            bottom: 14px;
+            right: 14px;
+        }
+        
+        img {
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bt">
+        <img src="img/home.png" alt="home">
+
+    </div>
+    <div class="btlist">
+        <img src="img/clos.png" alt="">
+        <img src="img/full.png" alt="">
+        <img src="img/open.png" alt="">
+        <img src="img/prev.png" alt="">
+        <img src="img/refresh.png" alt="">
+    </div>
+    <script>
+        // 获取变量组
+        var rollIcon = document.querySelectorAll(".btlist img");
+        var flag = 0;
+        var but = document.querySelector(".bt");
+        var long = 140;
+
+        for (var i = 0; i < rollIcon.length; i++) {
+            rollIcon[i].onclick = function() {
+                this.style.transition = "0.5s ";
+                this.style.transform = "scale(2)";
+                this.style.opacity = 0.1;
+                this.addEventListener("transitionend", function() {
+                    this.style.transition = "0.1s";
+                    this.style.transform = "rotate(-720deg)" + "scale(1)";
+                    this.style.opacity = 1;
+
+                    removeEventListener("transitionend")
+                });
+            }
+        }
+
+        but.onclick = function() {
+            if (!flag) {
+                this.style.transform = "rotate(-720deg)";
+                for (var i = 0; i < rollIcon.length; i++) {
+                    rollIcon[i].style.right = 14 + calculateX(i, long) + "px";
+                    rollIcon[i].style.bottom = 14 + calculateY(i, long) + "px";
+                    rollIcon[i].style.transition = "1s " + (i * 0.1) + "s";
+                    rollIcon[i].style.transform = "rotate(-720deg)" + "scale(1)";
+                }
+                flag = 1;
+            } else {
+                this.style.transform = "rotate(0deg)";
+                for (var i = 0; i < rollIcon.length; i++) {
+                    rollIcon[i].style.right = 14 + "px";
+                    rollIcon[i].style.bottom = 14 + "px";
+                    rollIcon[i].style.transition = "1s " + (0.5 - i * 0.1) + "s";
+                    rollIcon[i].style.transform = "rotate(0deg)" + "scale(1)";
+                }
+                flag = 0;
+            }
+        }
+
+        function calculateX(i, long) {
+            return X = Math.round(long * Math.sin(22.5 * i * Math.PI / 180));
+        }
+
+        function calculateY(i, long) {
+            return Y = Math.round(long * Math.cos(22.5 * i * Math.PI / 180));
+        }
+    </script>
+</body>
+
+</html>

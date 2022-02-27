@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+
+        }
+
+        body,
+        html {
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .box {
+            height: 100%;
+            position: relative;
+            background: pink;
+            perspective: 600px;
+        }
+
+        .inner {
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%) rotateY(0);
+            /* background: chartreuse; */
+            position: relative;
+
+            transform-style: preserve-3d;
+            transform-origin: center center 0px;
+            animation: move 1s linear infinite;
+        }
+
+        @keyframes move {
+            from {
+                transform: translate(-50%, -50%) rotateY(0);
+            }
+
+            to {
+                transform: translate(-50%, -50%) rotateY(360deg);
+            }
+        }
+
+        .inner img,
+        p {
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -70%);
+            position: relative;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="inner">
+            <img src="img\load\logo.png" alt="logo">
+
+        </div>
+        <p>loading 0%</p>
+    </div>
+    <script src="js/data.js"></script>
+    <script type="text/javascript">
+        window.onload = function () {
+            var pNode = document.querySelector("p");
+
+            var flag = 0;
+            var arr = [];
+            for (item in imgData) {
+                arr = arr.concat(imgData[item]);
+            }
+
+            for (var i = 0; i < arr.length; i++) {
+                var img = new Image();
+                img.src = arr[i];
+                img.onload = function () {
+                    flag++;
+                    pNode.innerHTML = "loading " + (Math.round(flag / arr.length * 100)) + "%";
+                }
+                img.onerror = function () {
+                    console.log("wrong");
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

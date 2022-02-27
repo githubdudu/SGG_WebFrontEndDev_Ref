@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+        a{
+            text-decoration: none;
+            color: gray;
+            display: block;
+
+        }
+        .row{
+            display: flex;
+        }
+
+        .row .item{
+            flex: 1;
+            text-align: center;
+        }
+
+        .item a:before{
+            content:"";
+            display: block;
+            width: 90px;
+            height: 90px;
+            margin: 10px auto;
+            border-radius: 50%;
+            background: radial-gradient(red ,grey 30%, black 50%, blue 70%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="row">
+            <div class="item">
+                <a href="">天猫</a>
+            </div>
+            <div class="item">
+                <a href="">聚划算</a>
+            </div>
+            <div class="item">
+                <a href="">天猫超市</a>
+            </div>
+            <div class="item">
+                <a href="">外卖</a>
+            </div>
+            <div class="item">
+                <a href="">天猫国际</a>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="item">
+                <a href="">充值中心</a>
+            </div>
+            <div class="item">
+                <a href="">肥猪旅行</a>
+            </div>
+            <div class="item">
+                <a href="">涛金币</a>
+            </div>
+            <div class="item">
+                <a href="">拍卖</a>
+            </div>
+            <div class="item">
+                <a href="">匪类</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

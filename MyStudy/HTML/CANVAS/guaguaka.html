@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body,
+        html {
+            overflow: hidden;
+            height: 100%;
+        }
+
+        div {
+            background: url(img/b.png);
+            background-size: 100% 100%;
+            display: block;
+            height: 100%;
+        }
+
+        canvas {
+            position: absolute;
+            transition:2s;
+        }
+    </style>
+
+</head>
+
+<body>
+    <canvas id="guaguaka" width="300" height="300">
+
+    </canvas>
+    <div></div>
+</body>
+<script>
+    var canvas = document.querySelector("#guaguaka");
+    var ctx = canvas.getContext("2d");
+
+    window.onload = () => {
+        canvas.width = document.documentElement.clientWidth;
+        canvas.height = document.documentElement.clientHeight;
+        var img = new Image();
+        img.src = "img/a.png";
+        img.onload = () => {
+            ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+
+            var flag = 0;
+            canvas.addEventListener("touchstart",one);
+            canvas.addEventListener("touchmove",two);
+
+            canvas.addEventListener("touchend", three);
+            function one(ev) {
+                ev = ev || event;
+                var touchC = ev.changedTouches[0];
+
+                var x = touchC.clientX - canvas.offsetLeft;
+                var y = touchC.clientY - canvas.offsetTop;
+
+                // ctx.save();
+                ctx.globalCompositeOperation = "destination-out";
+                ctx.strokeStyle = "black";
+                ctx.lineWidth = 20;
+                ctx.lineCap = "round";
+                ctx.lineJoin = "round";
+                ctx.beginPath();
+                ctx.moveTo(x, y);
+                ctx.lineTo(x + 1, y + 1);
+                ctx.stroke();
+            }
+            function two(ev) {
+                ev = ev || event;
+                var touchC = ev.changedTouches[0];
+
+                var x = touchC.clientX - canvas.offsetLeft;
+                var y = touchC.clientY - canvas.offsetTop;
+
+                // ctx.save();
+                // ctx.globalCompositeOperation = "destination-out";
+                // ctx.beginPath();
+                // ctx.strokeStyle = "black";
+                // ctx.lineWidth = 20;
+                // ctx.lineCap = "round";
+                // ctx.moveTo(x, y);
+                ctx.lineTo(x, y);
+                ctx.stroke();
+            }
+            function three(ev) {
+                var imgData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+                var allPx = imgData.width * imgData.height;
+
+                for (var i = 0; i < allPx; i++) {
+                    if (imgData.data[4 * i + 3] === 0) {
+                        flag++;
+                    }
+                    if (flag * 2 >= allPx){
+                        canvas.style.opacity = 0;
+                        break;
+                    }
+                }
+                
+            }
+            canvas.addEventListener("transitionend",()=>{
+                canvas.removeEventListener("touchstart",one);
+                canvas.removeEventListener("touchmove",two);
+                canvas.removeEventListener("touchend", three);
+                console.log(this);
+                canvas.remove();
+            })
+        }
+    }
+
+</script>
+
+</html>

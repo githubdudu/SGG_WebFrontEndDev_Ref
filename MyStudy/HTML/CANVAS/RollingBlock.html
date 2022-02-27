@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .play {
+            background: grey;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- create a canvas place -->
+    <canvas class="play" width="300" height="300"></canvas>
+</body>
+<script>
+    var canvas = document.querySelector(".play");
+    var ctx = canvas.getContext("2d");
+    var flag = 0;
+    var scaleNum = 0;
+    setInterval(function () {
+
+        flag++;
+        ctx.save();
+        ctx.beginPath();
+        ctx.fillStyle = "#FF0000";
+        ctx.translate(150, 150);
+        ctx.clearRect(-150, -150, 300, 300);
+        ctx.rotate(1 * flag * Math.PI / 180);
+        scaleNum = Math.abs((flag+300)%600/100 -3);
+        ctx.scale(scaleNum/1.5,scaleNum/1.5);
+        ctx.fillRect(-50, -50, 100, 100);
+        
+        ctx.restore();
+        
+    }, 10);
+</script>
+
+</html>
