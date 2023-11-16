@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS example</title>
+  <style>
+    .header {
+      min-width: 600px;
+
+    }
+
+    .header::after {
+      display: block;
+      content: "";
+      clear: both;
+    }
+
+    .mid-container {
+      float: left;
+      width: 100%;
+      background-color: aqua;
+    }
+
+    .mid {
+      padding: 0 100px;
+
+    }
+
+    .left {
+      float: left;
+      width: 100px;
+      margin-left: -100%;
+      background-color: wheat;
+    }
+
+    .right {
+      float: right;
+      margin-left: -100px;
+      width: 100px;
+      background-color: yellow;
+    }
+
+    .flex {
+      width: 400px;
+      height: 200px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-content: center;
+      overflow: hidden;
+      border: 1px solid grey;
+      resize: both;
+    }
+
+    .flex-box {
+      width: 50px;
+      height: 50px;
+      background-color: aqua;
+      border: 1px solid black;
+      text-align: center;
+      line-height: 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <div class="mid-container">
+
+      <div class="mid">Mid</div>
+    </div>
+    <div class="left">Left</div>
+    <div class="right">Right</div>
+
+  </div>
+  <br>
+
+  <div class="flex">
+    <div class="flex-box">1</div>
+    <div class="flex-box">2</div>
+    <div class="flex-box">3</div>
+    <div class="flex-box">4</div>
+    <div class="flex-box">5</div>
+  </div>
+
+
+</body>
+
+</html>
