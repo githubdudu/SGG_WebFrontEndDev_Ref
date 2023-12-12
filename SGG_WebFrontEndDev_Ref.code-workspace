@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "SGG_WebFrontEndDev_Ref"
+		},
+		{
+			"path": "React"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "SGG_WebFrontEndDev_Ref"
+	}
+}
