@@ -12,31 +12,118 @@
 
 学习资源按照目录分类， 每个目录所对应的视频内容都尽量提供了视频链接。
 
-如果需要找视频所对应的学习笔记，请使用  ctrl + F (windows) 或 command + F (macOS) 进行搜索 BV 号。
+如果需要找视频所对应的学习笔记，请使用  ctrl + F (windows) 或 command + F (macOS) 进行搜索 **BV 号**或者**视频名称**。
 
 ## 1.前端学科--基础阶段
-1.1 HTML+CSS 李立超 2016年版 103集
-	https://www.bilibili.com/video/BV1sW411T78k  
-1.2 CSS2.1  2017年版 27集
-    https://www.bilibili.com/video/BV1hW411T7dT  
-1.3-1.5  
-  --1.3 CSS3  2018年版 1-67集
-	https://www.bilibili.com/video/BV1eW411T7Nr  
-  --1.4 Less  2018年版 68-75集
-	https://www.bilibili.com/video/BV1YW411T7vd  
-  --1.5 BootStrap 2018年版 76-92集
-	https://www.bilibili.com/video/BV1YW411T7yy  
-1.6 HTML5核心技术 2018年 48集
-	https://www.bilibili.com/video/BV1YW411T7Lj  
-1.7 HTML5实战 2018年 33集
-	https://www.bilibili.com/video/BV1YW411T7p3  
-1.8 李立超前端基础2019最新版 本repo没有收录此笔记，请前往 https://share.weiyun.com/5JeDQan    
-	https://www.bilibili.com/video/BV1XJ411X7Ud
+### 1.1 HTML+CSS 
+
+**文件夹名称**： HTML+CSS
+
+**对应学习内容**：HTML+CSS 李立超 2016年版 103集
+
+**对应视频名称**：HTML与CSS前端入门佳作，百万播放，好评如潮！
+
+**视频介绍**： 本套视频适合零基础学习前端的同学，内容涵盖HTML基础、标签、CSS 选择器、盒子模型、浮动、定位、图片整合、PS 切图等页面相关常用技术。 视频最后包含一个实战项目：将一个 PSD 设计图转换为一个商业网站的首页。让同学们体验前端页面开发的全过程。
+
+**视频链接**：
+
+https://www.bilibili.com/video/BV1sW411T78k
+
+
+### 1.2 CSS2.1 
+
+**文件夹名称**： CSS2.1
+
+**对应学习内容**：CSS2.1 讲师: 达姆 2017年版 27集
+
+**对应视频名称**：尚硅谷CSS2教程(css2.1快速入门)
+
+**视频介绍**： CSS 2.1是一种样式表语言，允许作者和用户将样式(如字体和间距)附加到结构化文档(例如，HTML文档和XML应用程序)。通过将文档的表示样式与文档的内容分开，CSS 2.1简化了Web编写和站点维护。本套视频旨在提升学员对css2.1常用属性的理解。对浮动 定位 盒模型进行较深入的剖析与运用。
+
+**视频链接**：
+
+https://www.bilibili.com/video/BV1hW411T7dT
+
+### 1.3-1.5 CSS3 +  Less + BootStrap
+
+**文件夹名称**： CSS3 + Less + BootStrap
+
+**对应学习内容1**：CSS3 讲师：达姆 2018年版 1-67集
+
+**对应视频名称1**：尚硅谷CSS3教程（css快速入门）
+
+**视频介绍1**: 本套视频旨在向学员全面剖析css3中的新增的各类属性与方案。深入了解预处理less，并从源码的角度解读bootstrap相关实现。CSS3是最新的 CSS 级别,对CSS2.1中的边框、背景、文本、字体等做了扩展。新增2D、3D变换,过渡,动画。新增Flex、响应式、多列布局方案。
+
+**视频链接1**：
+
+https://www.bilibili.com/video/BV1eW411T7Nr
+
+**对应学习内容2**：Less 讲师：达姆 2018年版 68-75集
+
+**对应视频名称2**：尚硅谷前端less教程
+
+**视频介绍2**: Less 是一门CSS预处理语言，它扩展了CSS语言，增加了变量、Mixin、函数等特性，使CSS更易维护和扩展。bootstrap是一套简洁、直观、强悍的前端开发框架，它可以让web开发更迅速、简单。
+
+**视频链接2**：
+
+https://www.bilibili.com/video/BV1YW411T7vd
+
+**对应学习内容3**：BootStrap 讲师：达姆 2018年版 76-92集
+
+**对应视频名称3**：尚硅谷Bootstrap教程(bootstrap框架讲解)
+
+**视频介绍3**: Bootstrap是一套简洁、直观、强悍的前端开发框架，它可以让web开发更迅速、简单。
+
+**视频链接3**：
+
+https://www.bilibili.com/video/BV1YW411T7yy
+
+### 1.6  HTML5核心技术
+**文件夹名称**： HTML5核心技术
+
+**对应学习内容**：HTML5核心技术 讲师：达姆 2018年 48集
+
+**对应视频名称**：尚硅谷前端HTML5教程(html5入门经典)
+
+**视频介绍**： 本套视频录制的是尚硅谷最新HTML5教程； HTML5是定义 HTML 标准的最新的版本。 广义上我们应该认为HTML5是一套技术集合，允许更多样化和强大的网站和应用程序。主要包括语义，连通性，离线 & 存储，多媒体，2D/3D绘图 & 效果，性能 & 集成，设备访问，样式设计。
+
+**视频链接**：
+
+https://www.bilibili.com/video/BV1YW411T7Lj
+
+### 1.7 HTML5实战
+**文件夹名称**： HTML5实战
+
+**对应学习内容**：HTML5实战 讲师：达姆 2018年 33集
+
+**对应视频名称**：尚硅谷HTML5实战教程(html5项目实战)
+
+**视频介绍**： 本套视频是HTML5的实战视频，我们将综合HTML5的各个方面来构建一个fullpage（全屏滚动）的应用。课程将会从实战的角度深入全面的分析HTML5中的技术。并将技术灵活的运用入项目实战中。应用主要内容包括：1.dom中位置尺寸api详解;2.鼠标事件的兼容;3.全屏滚动的实现; 4.3d轮播的实现;5.3d品牌墙的实现;6.机器人动画实现;7.图片炸裂动画实现;8.canvas气泡动画实现。
+
+**视频链接**：
+
+https://www.bilibili.com/video/BV1YW411T7p3
+
+### 1.8 前端基础
+**文件夹名称**： 无。 本repo没有收录此笔记，请前往 https://share.weiyun.com/5JeDQan
+
+**对应学习内容**：李立超前端基础 讲师：李立超 2019最新版 148集
+
+**对应视频名称**：尚硅谷Web前端零基础入门HTML5+CSS3基础教程丨初学者从入门到精通
+
+**视频介绍**： 教程涵盖了HTML、CSS、HTML5和CSS3的核心技术点。通过学习可以帮助初学者快速上手，并完成大部分静态网页的开发。
+
+**视频链接**：
+
+https://www.bilibili.com/video/BV1XJ411X7Ud
+
 
 2.尚硅谷JavaScript基础教程 
 https://www.bilibili.com/video/BV1YW411T7GX
 
 ## 📁 目录结构（部分，深度3）
+
+### 1.前端学科--基础阶段
 
 ```
 ├── 1.前端学科--基础阶段/
@@ -172,5 +259,3 @@ https://www.bilibili.com/video/BV1YW411T7GX
 │   │   │   ├── 07_开机动画.md
 └──
 ```
-
-> 仅展示主要目录和文件，省略部分子项。
