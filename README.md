@@ -254,6 +254,7 @@ https://www.bilibili.com/video/BV1XJ411X7Ud
 │   │   │   ├── 06_出入场.md
 │   │   │   ├── 07_开机动画.md
 └──
+```
 
 ## 2.前端学科--核心&高级
 
@@ -261,7 +262,49 @@ https://www.bilibili.com/video/BV1XJ411X7Ud
 
 请自行下载 Firefox 浏览器，Chrome 浏览器， FastStone Capture 7.6， HBuilder.7.5.1.windows，notepad++.6.7.8.2， Sublime_Text_x64， 7zip 等教学中讲师使用的工具
 
+**文件夹名称**： 2.1 尚硅谷JavaScript教程
+
+**对应学习内容**：尚硅谷JavaScript教程 讲师: 李立超 2016年版 140集
+
+**对应视频名称**：尚硅谷JavaScript基础&实战丨JS入门到精通全套完整版
+
+**视频介绍**： 该视频是JavaScript基础视频，其中涵盖了ES标准、BOM以及DOM的大部分内容，适合有一定HTML和CSS基础的同学学习。
+
+**视频链接**：
+
 https://www.bilibili.com/video/BV1YW411T7GX
+
+### 2.2 尚硅谷JavaScript高级教程
+
+`prepare` 文件夹中是教学前完成的代码， `work_blank` 文件夹中是空白的代码模板+问题, `work` 文件夹中是讲师在教学中完成的代码。
+
+因为无法获知老师的名称，该老师有在教学中反问的特点，故用“凶老师”代称。无贬义。
+
+**文件夹名称**： 2.2 尚硅谷JavaScript高级教程
+
+**对应学习内容**：尚硅谷JavaScript高级教程 讲师: “凶老师” 2017年版 48集
+
+**对应视频名称**：尚硅谷JavaScript高级教程(javascript实战进阶)
+
+**视频介绍**：本套视频主讲JavaScript高级部分内容, 以复习总结JavaScript最基础的核心概念(数据类型，变量，内存，对象，函数)开始， 深入浅出讲解JavaScript核心也最具难度的部分技术：原型与原型链、执行上下文、执行上下文栈、变量提升、函数提升、作用域、作用域链、闭包、对象的多种创建模式、对象的继承模式、JavaScript事件循环机制等。这部分技术是成为高级前端工程师需要掌握的利器。
+
+**视频链接**：
+
+https://www.bilibili.com/video/BV14s411E7qf/
+
+### 2.3 尚硅谷jQuery教程
+
+**文件夹名称**： 2.3 尚硅谷jQuery教程
+
+**对应学习内容**：尚硅谷jQuery教程 讲师: “凶老师” 2017年版 54集
+
+**对应视频名称**：尚硅谷jQuery教程(jquery从入门到精通)
+
+**视频介绍**：jQuery是非常优秀，使用很广的JS函数库， 它能帮我们程序员简化DOM查询及DOM操作， 轻松实现动画效果。
+
+**视频链接**：
+
+https://www.bilibili.com/video/BV1ts411E7ag
 
 ### 📁 目录结构
 
@@ -311,5 +354,14 @@ https://www.bilibili.com/video/BV1YW411T7GX
 │   │               ├── firebug-2.0.14-fx.xpi
 │   │               └── tilt_3d-1.0.1-fx.xpi
 │   ├── 2.2 尚硅谷JavaScript高级教程/
+│   │   ├── JSAdvance/
+│   │   │   ├── prepare/
+│   │   │   ├── work/
+│   │   │   ├── work_blank/
+│   │   │   └── 笔记/
+│   │   └── 课件/
+│   │       ├── JS高级_单词.doc
+│   │       ├── JS高级xmind.png
+│   │       └── WebStorm_快捷键和代码模板/
 │   ├── 2.3 尚硅谷jQuery教程/
 ```
