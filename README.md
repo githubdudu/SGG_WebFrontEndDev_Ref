@@ -432,3 +432,43 @@ https://www.bilibili.com/video/BV1bs411E7pD
 │   │       └── 课件.zip
 ```
 
+## 4.前端学科--必备框架
+### 4.1 尚硅谷AngularJS教程
+
+**文件夹名称**： 4.1 尚硅谷AngularJS教程
+
+**对应学习内容**： 4.1 尚硅谷AngularJS教程 讲师: “Angular讲师” 2017年11月 18集
+
+**对应视频名称**： 尚硅谷AngularJS实战教程(angular.js框架精讲)
+
+**视频介绍**：本套视频涵盖了 AngularJS 框架的基本语法及应用, 内容包括: AngularJS基本语法，双向数据绑定，指令，表达式，MVC，MVVM, 模块对象，控制器对象，作用域对象等知识点。
+
+**视频链接**：
+
+https://www.bilibili.com/video/BV1ts411E7qg
+
+### 4.2 尚硅谷Zepto教程
+
+**文件夹名称**： 4.2 尚硅谷Zepto教程
+
+**对应学习内容**： 4.2 尚硅谷Zepto教程 讲师: “Angular讲师” 2017年11月 14集
+
+**对应视频名称**： 尚硅谷Zepto教程(zepto.js框架精讲)
+
+**视频介绍**：作为一个极轻量级，又和jQuery类似的前端框架，Zepto是大多数工程师移动端开发的不二之选，本视频从和jQuery相同的语法开始讲授，直到Zepto框架自己独有的特点，再结合项目实现，让你快速精通！
+
+**视频链接**：
+
+https://www.bilibili.com/video/BV18s411E7b4
+
+### 📁 目录结构
+
+```
+├── 4.前端学科--必备框架/
+│   ├── 4.1 尚硅谷AngularJS教程/
+│   │   ├── code.zip
+│   ├── 4.2 尚硅谷Zepto教程/
+│   │   ├── code.zip
+```
+
+
