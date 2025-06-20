@@ -364,4 +364,17 @@ https://www.bilibili.com/video/BV1ts411E7ag
 │   │       ├── JS高级xmind.png
 │   │       └── WebStorm_快捷键和代码模板/
 │   ├── 2.3 尚硅谷jQuery教程/
+│   │   ├── jQueryTest/
+│   │   │   ├── prepare/
+│   │   │   ├── work/
+│   │   │   ├── work_blank/
+│   │   │   └── 笔记/
+│   │   └── 课件/
+│   │       ├── jQuery.xmind.png
+│   │       ├── jQuery1.11.3 中文手册.chm
+│   │       ├── jQuery1.7 中文手册.chm
+│   │       ├── jQuery单词.doc
+│   │       ├── jQuery库/
+│   │       ├── jQuery插件/
+│   │       └── jQuery文档结构图.png
 ```
