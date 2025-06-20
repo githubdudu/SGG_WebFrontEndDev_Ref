@@ -378,3 +378,57 @@ https://www.bilibili.com/video/BV1ts411E7ag
 │   │       ├── jQuery插件/
 │   │       └── jQuery文档结构图.png
 ```
+
+## 3.前端学科--后台服务器端
+### 3.1 尚硅谷MongoDB教程
+
+请自行下载 mongodb-win32-x86_64-2008plus-ssl-3.2.4-signed.msi， NoSQL Manager for MongoDB 等安装文件. 相关文件过大, 不适合放置在GitHub上。
+
+**文件夹名称**： 3.1 尚硅谷MongoDB教程
+
+**对应学习内容**： 3.1 尚硅谷MongoDB教程 讲师: 李立超 2017年12月 19集
+
+**对应视频名称**： 尚硅谷MongoDB入门基础教程（一天搞定mongodb）
+
+**视频介绍**：本套视频是MongoDB的基础视频，其中涵盖了MongoDB简介、下载、安装、添加系统服务、图形化客户端的使用、以及MongoDB的CRUD基本操作、查询/修改操作符的使用等。
+
+**视频链接**：
+
+https://www.bilibili.com/video/BV18s411E78K
+
+### 3.2 尚硅谷Node.js教程
+
+如有需要，请自行下载 slik-subversion 安装文件。
+
+**文件夹名称**： 3.2 尚硅谷Node.js教程
+
+**对应学习内容**： 3.2 尚硅谷Node.js教程 讲师: 李立超 2017年09月 20集
+
+**对应视频名称**： 【尚硅谷】最经典Node.JS全套完整版教程(快速入门nodejs)
+
+**视频介绍**：内容涵盖 Node.js 简介、下载、安装、模块化、CommonJS、NPM、以及 Buffer、fs等模块的基本使用。
+
+**视频链接**：
+
+https://www.bilibili.com/video/BV1bs411E7pD
+
+### 📁 目录结构
+
+```
+├── 3.前端学科--后台服务器端/
+│   ├── 3.1 尚硅谷MongoDB教程/
+│   │   ├── 源码、笔记/
+│   │   │   ├── 1/
+│   │   │   └── 2/
+│   │   └── 课件/
+│   │       ├── MongoDB/
+│   │       └── Mongoose/
+│   ├── 3.2 尚硅谷NodeJS教程/
+│   │   ├── 源码、笔记/
+│   │   │   ├── 01/
+│   │   │   ├── 02/
+│   │   │   └── 03/
+│   │   └── 课件/
+│   │       └── 课件.zip
+```
+
