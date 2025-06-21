@@ -532,7 +532,7 @@ https://www.bilibili.com/video/BV15J411973T
 │   │               │       ├── 03_1_Object扩展.html
 │   │               │       ├── 03_2_Object扩展.html
 │   │               │       ├── 04_Array扩展.html
-│   │               │       ├── 05_Function扩展.html
+│   │               │       └── 05_Function扩展.html
 │   │               │   └── es6/
 │   │               │       ├── 其它/
 │   │               │       │   ├── 01_字符串扩展.html
@@ -542,25 +542,25 @@ https://www.bilibili.com/video/BV15J411973T
 │   │               │       │   ├── 04_深度克隆.html
 │   │               │       │   ├── 05_Set和Map数据结构.html
 │   │               │       │   └── 06_for_of循环.html
-│   │               │       ├── 常用/
-│   │               │       │   ├── 01_let关键字.html
-│   │               │       │   ├── 02_const关键字.html
-│   │               │       │   ├── 03_变量的解构赋值.html
-│   │               │       │   ├── 04_模板字符串.html
-│   │               │       │   ├── 05_简化的对象写法.html
-│   │               │       │   ├── 06_箭头函数.html
-│   │               │       │   ├── 07_点点点运算符.html
-│   │               │       │   ├── 08_形参默认值.html
-│   │               │       │   ├── 09_Promise对象.html
-│   │               │       │   ├── 09_promise过程分析.png
-│   │               │       │   ├── 10_Symbol.html
-│   │               │       │   ├── 11_Iterator遍历器.html
-│   │               │       │   ├── 12_Generator函数.html
-│   │               │       │   ├── 13_async函数.html
-│   │               │       │   ├── 14_class.html
-│   │               │       │   ├── 15_Module.html
-│   │               │       │   └── js/
-│   │               │       │       └── jquery-1.10.1.min.js
+│   │               │       └── 常用/
+│   │               │           ├── 01_let关键字.html
+│   │               │           ├── 02_const关键字.html
+│   │               │           ├── 03_变量的解构赋值.html
+│   │               │           ├── 04_模板字符串.html
+│   │               │           ├── 05_简化的对象写法.html
+│   │               │           ├── 06_箭头函数.html
+│   │               │           ├── 07_点点点运算符.html
+│   │               │           ├── 08_形参默认值.html
+│   │               │           ├── 09_Promise对象.html
+│   │               │           ├── 09_promise过程分析.png
+│   │               │           ├── 10_Symbol.html
+│   │               │           ├── 11_Iterator遍历器.html
+│   │               │           ├── 12_Generator函数.html
+│   │               │           ├── 13_async函数.html
+│   │               │           ├── 14_class.html
+│   │               │           ├── 15_Module.html
+│   │               │           └── js/
+│   │               │               └── jquery-1.10.1.min.js
 │   │               │   └── es7/
 │   │               │       └── ES7.html
 │   │               └── study/
@@ -810,45 +810,45 @@ https://www.bilibili.com/video/BV1oW41157DY
 ├── 7.前端学科--高级框架/
 │   ├── 7.2 尚硅谷_Promise核心技术/
 │   │   └── Promise资料下载地址.txt
-│   ├── 7.3 尚硅谷React教程/
-│   │   ├── 笔记/
-│   │   │   ├── 01_react_笔记.md
-│   │   │   ├── 02_react案例_笔记.md
-│   │   │   ├── 03_react-router_教程.md
-│   │   │   ├── 04_react-UI_教程.md
-│   │   │   └── 05_redux笔记.md
-│   │   ├── 课件/
-│   │   │   ├── files/
-│   │   │   │   ├── babel.min.js
-│   │   │   │   ├── prop-types.js
-│   │   │   │   ├── react-dom.development.js
-│   │   │   │   ├── react.development.js
-│   │   │   │   ├── redux-master.zip
-│   │   │   │   └── static page/
-│   │   │   │       ├── comment_page/
-│   │   │   │       └── users_page/
-│   │   │   └── 尚硅谷-React全家桶.pdf
-│   │   ├── 源代码/
-│   │   │   ├── sourceCode.zip/
-│   │   │   │   ├── 说明.md
-│   │   │   │   ├── react_blank/
-│   │   │   │   │   ├── package.json
-│   │   │   │   │   ├── ...
-│   │   │   │   ├── react_demo/
-│   │   │   │   │   ├── package.json
-│   │   │   │   │   ├── ...
-│   │   │   │   ├── react_redux/
-│   │   │   │   │   ├── package.json
-│   │   │   │   │   ├── ...
-│   │   │   │   ├── react_router/
-│   │   │   │   │   ├── package.json
-│   │   │   │   │   ├── ...
-│   │   │   │   ├── react_test/
-│   │   │   │   │   ├── package.json
-│   │   │   │   │   ├── ...
-│   │   │   │   └── react_ui/
-│   │   │   │       ├── package.json
-│   │   │   │       ├── ...
+│   └── 7.3 尚硅谷React教程/
+│       ├── 笔记/
+│       │   ├── 01_react_笔记.md
+│       │   ├── 02_react案例_笔记.md
+│       │   ├── 03_react-router_教程.md
+│       │   ├── 04_react-UI_教程.md
+│       │   └── 05_redux笔记.md
+│       ├── 课件/
+│       │   ├── files/
+│       │   │   ├── babel.min.js
+│       │   │   ├── prop-types.js
+│       │   │   ├── react-dom.development.js
+│       │   │   ├── react.development.js
+│       │   │   ├── redux-master.zip
+│       │   │   └── static page/
+│       │   │       ├── comment_page/
+│       │   │       └── users_page/
+│       │   └── 尚硅谷-React全家桶.pdf
+│       └── 源代码/
+│           └── sourceCode.zip/
+│               ├── 说明.md
+│               ├── react_blank/
+│               │   ├── package.json
+│               │   ├── ...
+│               ├── react_demo/
+│               │   ├── package.json
+│               │   ├── ...
+│               ├── react_redux/
+│               │   ├── package.json
+│               │   ├── ...
+│               ├── react_router/
+│               │   ├── package.json
+│               │   ├── ...
+│               ├── react_test/
+│               │   ├── package.json
+│               │   ├── ...
+│               └── react_ui/
+│                   ├── package.json
+│                   ├── ...
 ```
 ## 8.前端学科--项目实战
 
