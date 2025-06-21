@@ -278,11 +278,10 @@ https://www.bilibili.com/video/BV1YW411T7GX
 
 `prepare` 文件夹中是教学前完成的代码， `work_blank` 文件夹中是空白的代码模板+问题, `work` 文件夹中是讲师在教学中完成的代码。
 
-因为无法获知老师的名称，该老师有在教学中反问的特点，故用“凶老师”代称。无贬义。
 
 **文件夹名称**： 2.2 尚硅谷JavaScript高级教程
 
-**对应学习内容**：尚硅谷JavaScript高级教程 讲师: “凶老师” 2017年版 48集
+**对应学习内容**：尚硅谷JavaScript高级教程 讲师: 张晓飞 2017年版 48集
 
 **对应视频名称**：尚硅谷JavaScript高级教程(javascript实战进阶)
 
@@ -296,7 +295,7 @@ https://www.bilibili.com/video/BV14s411E7qf/
 
 **文件夹名称**： 2.3 尚硅谷jQuery教程
 
-**对应学习内容**：尚硅谷jQuery教程 讲师: “凶老师” 2017年版 54集
+**对应学习内容**：尚硅谷jQuery教程 讲师: 张晓飞 2017年版 54集
 
 **对应视频名称**：尚硅谷jQuery教程(jquery从入门到精通)
 
@@ -616,6 +615,7 @@ https://www.bilibili.com/video/BV15J411973T
 ### 6.1 Grunt
 
 Please run `npm install` first in the same folder that has `package.json` file.
+请先在包含 `package.json` 文件的同一文件夹中运行 `npm install`。
 
 **文件夹名称**： 6.1-6.3 Grunt, Gulp, Webpack
 
@@ -747,4 +747,123 @@ https://www.bilibili.com/video/BV1e7411j7T5
 │           └── 课件/
 │               ├── webpack从入门到精通.pdf
 │               └── 尚硅谷前端技术之webpack从入门到精通(上).pdf
+```
+
+## 7.前端学科--高级框架
+
+此处未收集 “尚硅谷VUE核心技术视频” 和 “尚硅谷小程序框架mpvue核心技术视频” 所对应内容。
+
+### 7.1 尚硅谷_axios核心技术
+
+**文件夹名称**： 无。 本repo 中未收集 “尚硅谷_axios核心技术” 的相关学习资料
+
+参考链接： https://juejin.cn/post/7175837282048409658#heading-15
+
+**对应学习内容**： 7.1 尚硅谷_axios核心技术 讲师: 张晓飞 2019年10月 29集
+
+**对应视频名称**： 尚硅谷_axios核心技术
+
+**视频介绍**：本套视频是关于 axios 的核心技术视频，其中涵盖了 axios 的安装、配置、使用、拦截器、取消请求、错误处理等内容。通过学习本套视频，你将能够熟练使用 axios 进行 HTTP 请求。
+
+**视频链接**：
+
+https://www.bilibili.com/video/BV1NJ41197u6
+
+### 7.2 尚硅谷_Promise核心技术
+
+**文件夹名称**： 7.2 尚硅谷_Promise核心技术
+
+**对应学习内容**： 7.2 尚硅谷_Promise核心技术 讲师: 张晓飞 2019年10月 40集
+
+**对应视频名称**： 尚硅谷Promise教程(promise前端进阶)
+
+**视频介绍**：本套视频是关于 Promise 的核心技术视频，其中涵盖了 Promise 的基本用法、链式调用、错误处理, 以及手写 Promise 的实现， 相关面试题。通过学习本套视频，你将能够熟练使用 Promise 进行异步编程。
+
+**视频链接**：
+
+https://www.bilibili.com/video/BV1MJ41197Eu
+
+### 7.3 尚硅谷React教程
+
+Please run `npm install` first in the same folder that has `package.json` file.
+请先在包含 `package.json` 文件的同一文件夹中运行 `npm install`。
+
+**文件夹名称**： 7.3 尚硅谷React教程
+
+**对应学习内容**： 7.3 尚硅谷React教程 讲师: 张晓飞 2018年1月 45集
+
+**对应视频名称**： 尚硅谷React实战教程全套完整版(轻松入门到精通)
+
+**视频介绍**：本套视频是关于 React 的核心技术视频，其中涵盖了 React 的基本概念、组件化开发、生命周期、状态管理、路由等内容；包含了React router的基本使用、Redux的基本使用。通过学习本套视频，你将能够熟练使用 React 进行前端开发。
+
+**视频链接**：
+
+https://www.bilibili.com/video/BV1oW41157DY
+
+### 7.4 尚硅谷VUE核心技术视频 未收录
+
+### 7.5 尚硅谷小程序框架mpvue核心技术视频 未收录
+
+### 📁 目录结构
+
+```
+├── 7.前端学科--高级框架/
+│   ├── 7.2 尚硅谷_Promise核心技术/
+│   │   └── Promise资料下载地址.txt
+│   ├── 7.3 尚硅谷React教程/
+│   │   ├── 笔记/
+│   │   │   ├── 01_react_笔记.md
+│   │   │   ├── 02_react案例_笔记.md
+│   │   │   ├── 03_react-router_教程.md
+│   │   │   ├── 04_react-UI_教程.md
+│   │   │   └── 05_redux笔记.md
+│   │   ├── 课件/
+│   │   │   ├── files/
+│   │   │   │   ├── babel.min.js
+│   │   │   │   ├── prop-types.js
+│   │   │   │   ├── react-dom.development.js
+│   │   │   │   ├── react.development.js
+│   │   │   │   ├── redux-master.zip
+│   │   │   │   └── static page/
+│   │   │   │       ├── comment_page/
+│   │   │   │       └── users_page/
+│   │   │   └── 尚硅谷-React全家桶.pdf
+│   │   ├── 源代码/
+│   │   │   ├── sourceCode.zip/
+│   │   │   │   ├── 说明.md
+│   │   │   │   ├── react_blank/
+│   │   │   │   │   ├── package.json
+│   │   │   │   │   ├── ...
+│   │   │   │   ├── react_demo/
+│   │   │   │   │   ├── package.json
+│   │   │   │   │   ├── ...
+│   │   │   │   ├── react_redux/
+│   │   │   │   │   ├── package.json
+│   │   │   │   │   ├── ...
+│   │   │   │   ├── react_router/
+│   │   │   │   │   ├── package.json
+│   │   │   │   │   ├── ...
+│   │   │   │   ├── react_test/
+│   │   │   │   │   ├── package.json
+│   │   │   │   │   ├── ...
+│   │   │   │   └── react_ui/
+│   │   │   │       ├── package.json
+│   │   │   │       ├── ...
+```
+## 8.前端学科--项目实战
+
+### 8.1 尚硅谷React项目【硅谷直聘】教程
+
+**文件夹名称**： 8.1 尚硅谷React项目【硅谷直聘】教程
+
+**对应学习内容**： 8.1 尚硅谷React项目【硅谷直聘】教程 讲师: 张晓飞 2018年4月 75集
+
+**对应视频名称**： 尚硅谷React项目实战，全栈开发Web前端项目《硅谷直聘》
+
+**视频介绍**：本套视频是新尚硅谷前端学科项目：<<硅谷直聘>> 课堂实录 。
+该项目是基于新版本 React 的全栈项目，此项目为一个前后台分离的招聘的 SPA, 包括前端应用和后端应用 。包括用户注册/登陆, Boss/牛人列表, 实时聊天等功能模块 。前端技术: React全家桶 + ES6 + Webpack 等、后端技术: NodeJS + Express + MongoDB + SocketIO等 。
+
+### 📁 目录结构
+
+```
 ```
