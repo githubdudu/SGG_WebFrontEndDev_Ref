@@ -852,7 +852,11 @@ https://www.bilibili.com/video/BV1oW41157DY
 ```
 ## 8.前端学科--项目实战
 
+我只收录了 “尚硅谷React项目【硅谷直聘】教程” 的相关学习资料及视频信息。其他项目未收集。
+
 ### 8.1 尚硅谷React项目【硅谷直聘】教程
+
+未包含 `node_modules` 文件夹。请自行安装 React 脚手架。
 
 **文件夹名称**： 8.1 尚硅谷React项目【硅谷直聘】教程
 
@@ -866,4 +870,34 @@ https://www.bilibili.com/video/BV1oW41157DY
 ### 📁 目录结构
 
 ```
+└── 8.前端学科--项目实战/
+    └── 8.1 尚硅谷React项目【硅谷直聘】教程/
+        ├── 笔记总结/
+        │   └── 笔记总结.md
+        ├── 课件资料/
+        │   ├── resource/
+        │   │   └── images/
+        │   ├── api文档.md
+        │   └── react全栈项目-硅谷直聘.pdf
+        └── 源码/
+            └── code.zip
+                ├── 硅谷直聘项目运行说明.md
+                ├── gzhipin-client_blank/
+                ├── gzhipin-client_final/
+                ├── gzhipin-server_blank/
+                ├── gzhipin-server_final/
+                └── redux_mini/
 ```
+
+
+# 写在后面
+
+前端发展迅速，本文档中涉及的教学内容很多已经过时，涉及到的技术栈也有了新的版本。但是 HTML5、CSS3、JavaScript 等基础知识仍然是前端开发的核心, 这些知识目前没有过时。Webpack已经到了 5.x 版本，同时随着 Next.js 的兴起， Vite 也成为了新流行的前端构建工具。 （https://2024.stateofjs.com/en-US/ 2024 state of JS survey 中，均有69%的受访者表示使用过 Vite 和 Webpack）。 使用`create-react-app` 脚手架创建的 React 项目已经不再推荐使用，取而代之的是 Vite 和 Next.js 等新一代脚手架。 
+
+React 也全面拥抱了 functional component 和 hooks 的编程范式，已经不再推荐使用 class component。目前 React 又开始引入更多 server-side rendering（SSR）功能。 随着近年来前端蓬勃发展，前端技术栈更加复杂，前端项目也越来越庞大和复杂， 似乎趋势又在转回到 SSR 的模式。这些变化还无法预测，我们只能持续观察。
+
+随着2023 年 generative AI 的兴起， 越来越多的前端开发工作可以使用AI 工具提升效率。 比如以 Cursor 代表的 AI Agent, 可以运行命令行，自动化生成代码。 Vercel 推出的 v0.dev 可以用于生成组件代码。 最近基于 terminal 的 Claude Code 的横空出世，可以让开发人员更容易地在开发流中接入AI。
+
+有越来越多声音认为，前端开发将被AI 取代。 我持否定态度。 AI 很难代替专业性，很难获取场景下的上下文 （目前AI 主要通过文字获取信息）。在实践中， 达到20，000 行的React 项目，AI 就无法完成 debug 工作了。 
+
+2025/06
