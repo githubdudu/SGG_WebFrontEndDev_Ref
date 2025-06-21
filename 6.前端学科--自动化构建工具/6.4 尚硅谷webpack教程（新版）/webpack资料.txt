@@ -1,0 +1,46 @@
+#  压缩文件  \SGG_WebFrontEndDev_Ref\6.前端学科--自动化构建工具\6.4 尚硅谷webpack教程（新版）\webpack资料.zip
+webpack资料
+webpack资料\代码
+webpack资料\代码\1.webpack基本使用
+webpack资料\代码\1.webpack基本使用\01.webpack简介
+webpack资料\代码\1.webpack基本使用\02.webpack初体验
+webpack资料\代码\2.webpack开发环境配置
+webpack资料\代码\2.webpack开发环境配置\03.打包样式资源
+webpack资料\代码\2.webpack开发环境配置\04.打包html资源
+webpack资料\代码\2.webpack开发环境配置\05.打包图片资源
+webpack资料\代码\2.webpack开发环境配置\06.打包其他资源
+webpack资料\代码\2.webpack开发环境配置\07.devServer
+webpack资料\代码\2.webpack开发环境配置\08.开发环境配置
+webpack资料\代码\3.webpack生产环境配置
+webpack资料\代码\3.webpack生产环境配置\09.提取css成单独文件
+webpack资料\代码\3.webpack生产环境配置\10.css兼容性处理
+webpack资料\代码\3.webpack生产环境配置\11.压缩css
+webpack资料\代码\3.webpack生产环境配置\12.js语法检查
+webpack资料\代码\3.webpack生产环境配置\13.js兼容性处理
+webpack资料\代码\3.webpack生产环境配置\14.js压缩
+webpack资料\代码\3.webpack生产环境配置\15.html压缩
+webpack资料\代码\3.webpack生产环境配置\16.生产环境配置
+webpack资料\代码\4.webpack优化环境配置
+webpack资料\代码\4.webpack优化环境配置\17.优化配置介绍
+webpack资料\代码\4.webpack优化环境配置\18.HMR
+webpack资料\代码\4.webpack优化环境配置\19.source-map
+webpack资料\代码\4.webpack优化环境配置\20.oneOf
+webpack资料\代码\4.webpack优化环境配置\21.缓存
+webpack资料\代码\4.webpack优化环境配置\22.tree shaking
+webpack资料\代码\4.webpack优化环境配置\23.code split
+webpack资料\代码\4.webpack优化环境配置\24.lazy loading
+webpack资料\代码\4.webpack优化环境配置\25.pwa
+webpack资料\代码\4.webpack优化环境配置\26.多进程打包
+webpack资料\代码\4.webpack优化环境配置\27.externals
+webpack资料\代码\4.webpack优化环境配置\28.dll
+webpack资料\代码\5.webpack配置详解
+webpack资料\代码\5.webpack配置详解\29.entry
+webpack资料\代码\5.webpack配置详解\30.output
+webpack资料\代码\5.webpack配置详解\31.module
+webpack资料\代码\5.webpack配置详解\32.resolve
+webpack资料\代码\5.webpack配置详解\33.dev server
+webpack资料\代码\5.webpack配置详解\34.optimization
+webpack资料\代码\6.webpack5使用
+webpack资料\代码\6.webpack5使用\README.MD
+webpack资料\代码\6.webpack5使用\webpack4
+webpack资料\代码\6.webpack5使用\webpack5
